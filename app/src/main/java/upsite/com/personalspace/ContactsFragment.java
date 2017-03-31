@@ -44,6 +44,17 @@ public class ContactsFragment extends Fragment {
 
         adapter = new UserCardAdapter(getContext(), users);
         recyclerView.setAdapter(adapter);
+        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+
+            }
+
+            @Override
+            public void onItemLongClick(View view, int position) {
+
+            }
+        }));
 
 
         return rootView;
