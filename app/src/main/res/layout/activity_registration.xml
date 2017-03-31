@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/indigo"
+    tools:context="upsite.com.personalspace.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/registration_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:text="@string/registration_button"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="@string/username_hint"
+        android:backgroundTint="@color/white"/>
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="@string/login_hint"
+        android:backgroundTint="@color/white"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="@string/password_hint"
+        android:backgroundTint="@color/white"/>
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorHighlight="@color/white"
+        android:hint="@string/confirm_password_hint"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="male"
+                android:textColor="@color/white"
+                android:layout_gravity="left"
+                android:theme="@style/MyRadioGroupTheme"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                android:padding="20dp"
+                android:paddingRight="20dp"/>
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="female"
+                android:textColor="@color/white"
+                android:layout_gravity="right"
+                android:theme="@style/MyRadioGroupTheme"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                android:padding="20dp"
+                android:paddingLeft="20dp"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/sing_up_button"
+        style="@style/SingUpButtonTheme"
+        android:onClick="onSingUpButtonClick"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+

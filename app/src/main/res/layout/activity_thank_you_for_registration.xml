@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="100dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="100dp"
+    tools:context="upsite.com.personalspace.ThankYouForRegistrationActivity"
+    android:orientation="vertical"
+    android:background="@color/indigo">
+
+    <ImageView
+        android:id="@+id/lock_image"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/ic_lock_outline_white_48pt_3x"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/personal_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:text="@string/thank_you"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="for your registration"
+        android:layout_gravity="center"
+        android:paddingBottom="50dp"/>
+
+    <Button
+        android:id="@+id/go_button"
+        style="@style/GoButtonTheme"
+        android:onClick="onGoButtonClick"/>
+
+</LinearLayout>

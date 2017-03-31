@@ -1,0 +1,113 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SignInButtonTheme" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/sign_in_button</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:text">@string/sign_in_button</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="SingUpButtonTheme" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/sign_in_button</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:text">@string/sing_up_button</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="GoButtonTheme" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/sign_in_button</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:text">@string/go_button</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="SendButtonTheme" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/sign_in_button</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:text">@string/send_button</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="MyRadioGroupTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlNormal">@color/darker_yellow</item>
+        <item name="android:colorControlActivated">@color/darker_yellow</item>
+    </style>
+
+    <style name="MyEditTextTheme">
+        <item name="android:colorControlNormal">@color/white</item>
+        <item name="android:colorControlActivated">@color/white</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="RatingBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RatingBar.Heart">
+        <item name="SRB_maxRating">3</item>
+        <item name="SRB_textColor">@color/black</item>
+        <item name="SRB_filledIconColor">@color/red</item>
+        <item name="SRB_unfilledIconColor">@color/red</item>
+        <item name="SRB_filledIcon">@string/ratingIconHeartFilled</item>
+        <item name="SRB_unfilledIcon">@string/ratingIconHeartOutline</item>
+    </style>
+
+    <style name="MyCardViewStyle" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPaddingBottom">16dp</item>
+        <item name="contentPaddingTop">5dp</item>
+        <item name="contentPaddingLeft">16dp</item>
+        <item name="contentPaddingRight">16dp</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <color name="indigo">#3F51B5</color>
+    <color name="darker_yellow">#F9A825</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#B71C1C</color>
+
+</resources>
