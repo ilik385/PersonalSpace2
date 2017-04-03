@@ -113,8 +113,8 @@ public class AnotherUserActivity extends AppCompatActivity {
 
         //Floating Action Button 1
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) fab1.getLayoutParams();
-        layoutParams.rightMargin += (int) (fab1.getWidth() * 1.7);
-        layoutParams.bottomMargin += (int) (fab1.getHeight() * 0.25);
+        layoutParams.rightMargin += (int) (fab1.getWidth() * 1.9);
+        layoutParams.bottomMargin -= (int) (fab1.getHeight() * 0.3);
         fab1.setLayoutParams(layoutParams);
         fab1.startAnimation(show_fab_1);
         fab1.setClickable(true);
@@ -122,14 +122,14 @@ public class AnotherUserActivity extends AppCompatActivity {
         //Floating Action Button 2
         FrameLayout.LayoutParams layoutParams2 = (FrameLayout.LayoutParams) fab2.getLayoutParams();
         layoutParams2.rightMargin += (int) (fab2.getWidth() * 1.5);
-        layoutParams2.bottomMargin += (int) (fab2.getHeight() * 1.5);
+        layoutParams2.bottomMargin += (int) (fab2.getHeight() * 0.8);
         fab2.setLayoutParams(layoutParams2);
         fab2.startAnimation(show_fab_2);
         fab2.setClickable(true);
 
         //Floating Action Button 3
         FrameLayout.LayoutParams layoutParams3 = (FrameLayout.LayoutParams) fab3.getLayoutParams();
-        layoutParams3.rightMargin += (int) (fab3.getWidth() * 0.25);
+        layoutParams3.rightMargin += (int) (fab3.getWidth() * 0.9);
         layoutParams3.bottomMargin += (int) (fab3.getHeight() * 1.7);
         fab3.setLayoutParams(layoutParams3);
         fab3.startAnimation(show_fab_3);
@@ -137,8 +137,8 @@ public class AnotherUserActivity extends AppCompatActivity {
 
         //Floating Action Button 4
         FrameLayout.LayoutParams layoutParams4 = (FrameLayout.LayoutParams) fab4.getLayoutParams();
-        layoutParams4.rightMargin += (int) (fab4.getWidth() * 0.25);
-        layoutParams4.bottomMargin += (int) (fab4.getHeight() * 1.7);
+        layoutParams4.rightMargin -= (int) (fab4.getWidth() * 0.3);
+        layoutParams4.bottomMargin += (int) (fab4.getHeight() * 1.9);
         fab4.setLayoutParams(layoutParams4);
         fab4.startAnimation(show_fab_4);
         fab4.setClickable(true);
@@ -149,8 +149,8 @@ public class AnotherUserActivity extends AppCompatActivity {
 
         //Floating Action Button 1
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) fab1.getLayoutParams();
-        layoutParams.rightMargin -= (int) (fab1.getWidth() * 1.7);
-        layoutParams.bottomMargin -= (int) (fab1.getHeight() * 0.25);
+        layoutParams.rightMargin -= (int) (fab1.getWidth() * 1.9);
+        layoutParams.bottomMargin += (int) (fab1.getHeight() * 0.3);
         fab1.setLayoutParams(layoutParams);
         fab1.startAnimation(hide_fab_1);
         fab1.setClickable(false);
@@ -158,14 +158,14 @@ public class AnotherUserActivity extends AppCompatActivity {
         //Floating Action Button 2
         FrameLayout.LayoutParams layoutParams2 = (FrameLayout.LayoutParams) fab2.getLayoutParams();
         layoutParams2.rightMargin -= (int) (fab2.getWidth() * 1.5);
-        layoutParams2.bottomMargin -= (int) (fab2.getHeight() * 1.5);
+        layoutParams2.bottomMargin -= (int) (fab2.getHeight() * 0.8);
         fab2.setLayoutParams(layoutParams2);
         fab2.startAnimation(hide_fab_2);
         fab2.setClickable(false);
 
         //Floating Action Button 3
         FrameLayout.LayoutParams layoutParams3 = (FrameLayout.LayoutParams) fab3.getLayoutParams();
-        layoutParams3.rightMargin -= (int) (fab3.getWidth() * 0.25);
+        layoutParams3.rightMargin -= (int) (fab3.getWidth() * 0.9);
         layoutParams3.bottomMargin -= (int) (fab3.getHeight() * 1.7);
         fab3.setLayoutParams(layoutParams3);
         fab3.startAnimation(hide_fab_3);
@@ -173,8 +173,8 @@ public class AnotherUserActivity extends AppCompatActivity {
 
         //Floating Action Button 4
         FrameLayout.LayoutParams layoutParams4 = (FrameLayout.LayoutParams) fab4.getLayoutParams();
-        layoutParams4.rightMargin -= (int) (fab4.getWidth() * 0.25);
-        layoutParams4.bottomMargin -= (int) (fab4.getHeight() * 1.7);
+        layoutParams4.rightMargin += (int) (fab4.getWidth() * 0.3);
+        layoutParams4.bottomMargin -= (int) (fab4.getHeight() * 1.9);
         fab4.setLayoutParams(layoutParams4);
         fab4.startAnimation(hide_fab_4);
         fab4.setClickable(false);
