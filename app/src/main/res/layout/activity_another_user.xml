@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/another_user_coordinator"
+    tools:context="upsite.com.personalspace.AnotherUserActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="297dp"
+            android:layout_height="297dp"
+            android:layout_gravity="center|top"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="273dp"
+                android:src="@drawable/foto_natali_jpg"
+                android:paddingBottom="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Natali"
+                    android:textSize="30sp"
+                    android:textColor="@color/indigo"
+                    />
+
+                <TextView
+                    android:paddingLeft="140dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:text="2.9"
+                    android:textColor="@color/indigo"/>
+
+                <ImageView
+                    android:paddingTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_like_filled"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--<TextView
+            android:id="@+id/hint_text_user_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="papapapap"
+            android:textSize="18sp"
+            android:paddingTop="40dp"
+            android:layout_gravity="center"/>!-->
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        app:backgroundTint="@color/darker_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_heart_fab"
+        />
+
+    <include layout="@layout/fab_layout"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
