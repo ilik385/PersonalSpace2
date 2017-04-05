@@ -23,6 +23,7 @@
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".AnotherUserActivity"></activity>
+        <activity android:name=".UserMediaContentPageActivity"/>
     </application>
 
 </manifest>
