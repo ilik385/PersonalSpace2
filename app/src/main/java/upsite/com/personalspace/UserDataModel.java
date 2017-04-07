@@ -9,6 +9,7 @@ public class UserDataModel {
     String userName;
     String userRate;
     String userHeart;
+    //private UUID idUser;
 
 
     public UserDataModel(String userCardAvatar, String userName, String userRate, String userHeart) {
@@ -16,6 +17,7 @@ public class UserDataModel {
         this.userName = userName;
         this.userRate = userRate;
         this.userHeart = userHeart;
+        //UUID idUser = UUID.randomUUID();
     }
 
     public String getUserCardAvatar() {
@@ -33,4 +35,8 @@ public class UserDataModel {
     public String getUserHeart() {
         return userHeart;
     }
+
+    //public UUID getIdUser(){
+    //    return idUser;
+    //}
 }

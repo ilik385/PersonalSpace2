@@ -15,15 +15,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".ThankYouForRegistrationActivity" />
+
         <activity android:name=".ForgotPasswordActivity" />
+
         <activity
-            android:name=".UserProfileActivity"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AnotherUserActivity"></activity>
-        <activity android:name=".UserMediaContentPageActivity"/>
+                  android:name=".UserProfileActivity"
+                  android:label=""
+                  android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AnotherUserActivity"/>
+
+        <activity android:name=".UserMediaContentPageActivity"
+                  android:label="">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".UserProfileActivity"/></activity>
+
+
     </application>
 
 </manifest>

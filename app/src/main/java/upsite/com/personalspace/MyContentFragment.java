@@ -15,12 +15,14 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 
+
 /**
  * Created by Ilik on 03.04.2017.
  */
 
 public class MyContentFragment extends Fragment {
 
+    public static final int EXTRA_DATE = 1;
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ArrayList users;
@@ -28,6 +30,8 @@ public class MyContentFragment extends Fragment {
     private static RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private static RecyclerView.Adapter adapter;
+
+
 
    //public MyContentFragment(){
 
@@ -38,15 +42,18 @@ public class MyContentFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         setHasOptionsMenu(true);
+        String s = getActivity().getIntent().getStringExtra(ContactsFragment.EXTRA_CONTACT_ID);
+        getActivity().setTitle(s);
     }
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_mediacontent, container, false);
 
-        //
-        //
+        //getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
 
         toolbar = (Toolbar)v.findViewById(R.id.toolbar_media);
         //((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
@@ -57,12 +64,10 @@ public class MyContentFragment extends Fragment {
         tabLayout = (TabLayout)v.findViewById(R.id.tab_layout_user_content);
         tabLayout.setupWithViewPager(viewPager);
 
-        //if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-        //    getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
-        //}
 
         return v;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -76,6 +81,7 @@ public class MyContentFragment extends Fragment {
             default:
                 return super.onOptionsItemSelected(item);
         }
+
     }
 
     private void setupViewPager(ViewPager viewPager) {

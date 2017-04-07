@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -37,12 +38,13 @@ public class PhotoFragment extends Fragment {
 
         fetchUsers();
 
-        adapter = new UserCardAdapter(getContext(), users);
+        adapter = new UserCardAdapterPhoto(getContext(), users);
         recyclerView.setAdapter(adapter);
-        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
+        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(),
+                recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-
+                Toast.makeText(getContext(), "picture", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -57,12 +59,14 @@ public class PhotoFragment extends Fragment {
     public void fetchUsers() {
         users = new ArrayList();
 
-        users.add(new UserDataModel("foto_natali_jpg", "Natali", "3.8", "ic_like_filled"));
-        users.add(new UserDataModel("foto_kristina", "Kristina", "4.1", "ic_like_empty"));
-        users.add(new UserDataModel("foto_user_profile", "Alex", "2.6", "ic_like"));
-        users.add(new UserDataModel("foto_natali_jpg", "Marina", "2.9", "ic_like"));
-        users.add(new UserDataModel("foto_kristina", "Marina", "2.9", "ic_like"));
-        users.add(new UserDataModel("foto_user_profile", "Marina", "2.9", "ic_like"));
+        users.add(new UserDataModelPhoto("0", 1));
+        users.add(new UserDataModelPhoto("1", 2));
+        users.add(new UserDataModelPhoto("0", 1));
+        users.add(new UserDataModelPhoto("1", 2));
+        users.add(new UserDataModelPhoto("0", 1));
+        users.add(new UserDataModelPhoto("1", 2));
+        users.add(new UserDataModelPhoto("0", 1));
+        users.add(new UserDataModelPhoto("1", 2));
     }
 
 
